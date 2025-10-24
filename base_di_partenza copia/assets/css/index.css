@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+h1 {
+  font-family: "spectral", serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+li {
+  font-family: "roboto", sans-serif;
+}
+
+header {
+  background-color: #ffc017;
+  flex-direction: column;
+  height: 500px;
+}
+i {
+  font-size: 24px;
+}
+.flex {
+  display: flex;
+}
+
+ul {
+  align-items: center;
+}
+li {
+  list-style: none;
+  padding: 10px;
+}
+
+ul li button {
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+hr {
+  width: 100%;
+  border: 0.5px solid black;
+  margin: 0;
+}
+
+#header-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+  margin-left: 100px;
+}
+#header-text-container h1 {
+  margin: 0;
+  font-size: 7em;
+}
+#header-text-container p {
+  font-size: 1.5em;
+  width: 500px;
+}
+
+#header-text-container button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+}
+
+#container-Svg {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+}
+
+#container-intestazione {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* main */
+
+#trand-Box {
+  display: flex;
+  flex-wrap: wrap; /* Permette alle card di andare a capo */
+  padding-top: 24px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f2f2f2; /* Separatore sotto trending */
+}
+
+.trending-header {
+  /* Intestazione "TRENDING ON MEDIUM" */
+  display: flex;
+  align-items: center;
+  width: 100%; /* Occupa tutta la larghezza */
+  margin-bottom: 20px;
+}
+
+.trending-header img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.trending-header h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tranding-item-wrapper {
+  /* Wrapper per numero + card: 3 colonne per riga (33.33% ciascuna) */
+  display: flex;
+  width: 33.33%; /* 3 card per riga */
+  margin-bottom: 20px;
+  gap: 10px; /* Spazio tra numero e contenuto */
+}
+
+.trending-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ccc;
+  line-height: 1;
+  flex-shrink: 0; /* Impedisce al numero di restringersi */
+  margin-right: 10px;
+}
+
+.tranding-card {
+  /* Contenitore effettivo del contenuto */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tranding-author-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.tranding-author-line img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.tranding-autor {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.tranding-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.tranding-card-footer {
+  display: flex;
+  font-size: 13px;
+  color: #555;
+  gap: 5px;
+}
+
+.news-img-autor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.news-img-autor img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+#news-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* Permette alle card di andare a capo */
+  padding-top: 24px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f2f2f2; /* Separatore sotto trending */
+  width: 60%;
+  margin-left: 40px;
+}
+
+.news-card-container {
+  /* Wrapper per ogni card di news */
+  width: 100%; /* Occupa tutta la larghezza */
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.news-card-container:last-child {
+  border-bottom: none; /* Rimuove il bordo dall'ultima card */
+  margin-bottom: 0; /* Rimuove il margine dall'ultima card */
+}
+
+.news-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin-right: 50px;
+}
+
+.news-autor {
+  font-size: 17px;
+  color: #000;
+  font-weight: 600;
+}
+.news-title {
+  font-size: 25px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.news-description {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 12px;
+}
+.news-argoment {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #555;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+.news-footer-flex i {
+  margin-left: auto;
+}
+.news-footer-flex {
+  align-items: center;
+  font-size: 15px;
+  color: #555;
+  margin-top: auto;
+}
+.news-img {
+  flex-shrink: 0;
+  height: 150px;
+  margin-left: 10px;
+}
+.news-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  position: absolute;
+  top: 800px; /* Spostalo dopo la sezione Trending */
+  right: 40px; /* Allinea a destra del main */
+  width: 25%; /* Larghezza della sidebar */
+  padding-top: 40px;
+}
+
+footer h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+footer a {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #555;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+footer hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #f2f2f2;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+footer ul li a {
+  background: none;
+  padding: 0;
+  font-size: 12px;
+  color: #555;
+}
